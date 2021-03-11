@@ -1,6 +1,44 @@
 import React, { Component } from 'react';
 import QuoteInfo from './components/QuoteInfo';
 import quotes from './QuoteDB';
+//ALL PHOTOS SOURCED FROM UNSPLASH.COM
+import photo1 from './images/1.jpeg';
+import photo2 from './images/2.jpeg';
+import photo3 from './images/3.jpeg';
+import photo4 from './images/4.jpeg';
+import photo5 from './images/5.jpeg'; 
+import photo6 from './images/6.jpeg';
+import photo7 from './images/7.jpeg';
+import photo8 from './images/8.jpeg';
+import photo9 from './images/9.jpeg';
+import photo10 from './images/10.jpeg';
+import photo11 from './images/11.jpeg';
+import photo12 from './images/12.jpeg';
+import photo13 from './images/13.jpeg';
+import photo14 from './images/14.jpeg';
+import photo15 from './images/15.jpeg';
+import photo16 from './images/16.jpeg';
+import photo17 from './images/17.jpeg';
+import photo18 from './images/18.jpeg';
+import photo19 from './images/19.jpeg';
+import photo20 from './images/20.jpeg';
+import photo21 from './images/21.jpeg';
+import photo22 from './images/22.jpeg';
+import photo23 from './images/23.jpeg';
+import photo24 from './images/24.jpeg';
+import photo25 from './images/25.jpeg';
+import photo26 from './images/26.jpeg';
+import photo27 from './images/27.jpeg';
+import photo28 from './images/28.jpeg';
+import photo29 from './images/29.jpeg';
+import photo30 from './images/30.jpeg';
+import photo31 from './images/31.jpeg';
+import photo32 from './images/32.jpeg';
+import photo33 from './images/33.jpeg';
+import photo34 from './images/34.jpeg';
+import photo35 from './images/35.jpeg';
+import photo36 from './images/36.jpeg';
+import photo37 from './images/37.jpeg';
 
 export default class App extends Component {
     constructor(props) {
@@ -10,44 +48,21 @@ export default class App extends Component {
             quote: quotes[0].quote,
             author: quotes[0].author,
             backgrounds: [
-                'https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1470290449668-02dd93d9420a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80',
-                'https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1484268234627-2278797bec04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1552084162-ec07b3f162dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1556834234-ff0f846f83cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1567712200021-20639e891b7a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1476172461888-b2b80f220697?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1567003762442-2078a0da1cee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1464802686167-b939a6910659?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80',
-                'https://images.unsplash.com/photo-1580610447943-1bfbef5efe07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1514864151880-d1bef4892f29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
-                'https://images.unsplash.com/photo-1515606174663-ad8323c6895e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1475372674317-8003c861cb6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
-                'https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80',
-                'https://images.unsplash.com/photo-1496497243327-9dccd845c35f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1445570123738-861d5bbb99c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1475598322381-f1b499717dda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80',
-                'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80',
-                'https://images.unsplash.com/photo-1527519135413-1e146b552e10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
-                'https://images.unsplash.com/photo-1557162471-8752b8dd92f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1377&q=80',
-                'https://images.unsplash.com/photo-1466354424719-343280fe118b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1526749837599-b4eba9fd855e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80',
-                'https://images.unsplash.com/photo-1565191999001-551c187427bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1468083684825-012f39547b23?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-            ],
-            viewedBackgrounds: []
+                photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18,
+                photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34, photo35,
+                photo36, photo37
+            ]
         };
+    }
+    
+    componentDidMount() {
+        const imagesPreload = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18,
+                photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34, photo35, photo36, photo37];
+        imagesPreload.forEach((image) => {
+            const newImage = new Image();
+            newImage.src = image;
+            window[image] = newImage;
+        });
     }
     
     shuffleAll = (arr) => {
@@ -63,22 +78,7 @@ export default class App extends Component {
             author: randQuote.author
         });
     }
-    
-    // findRandomQuote = (arr) => {
-    //     let num = Math.floor(Math.random() * quotes.length);
-    //     let { viewedQuotes } = this.state;
-    //     let splicedQuote = quotes.splice(num, 1)[0];
-    //     viewedQuotes.push(splicedQuote);
-    //     if (quotes.length == 0) {
-    //         quotes = viewedQuotes.splice(0, viewedQuotes.length);
-    //         viewedQuotes = [];
-    //     }
-    //     this.setState({
-    //         quote: splicedQuote.quote,
-    //         author: splicedQuote.author
-    //     });
-    // }
-    
+
     findRandomBackground = (arr) => {
         const { backgrounds } = this.state;
         let background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
@@ -87,24 +87,8 @@ export default class App extends Component {
         document.body.style.transitionProperty = "background";
         document.body.style.transitionDuration = ".5s";
         document.body.style.transitionTimingFunction = "ease-in-out";
-        document.body.style.transitionDelay = ".1s";
+        document.body.style.transitionDelay = ".15s";
     }
-    
-    // findRandomBackground = (arr) => {
-    //     let { backgrounds } = this.state;
-    //     let { viewedBackgrounds } = this.state;
-    //     let background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-    //     let splicedBackground = backgrounds.splice(background, 1)[0];
-    //     viewedBackgrounds.push(splicedBackground);
-    //     if (backgrounds.length == 0) {
-    //         backgrounds = viewedBackgrounds;
-    //     }
-    //     document.body.style.background = `url(${splicedBackground})`;
-    //     document.body.style.transitionProperty = "background";
-    //     document.body.style.transitionDuration = ".5s";
-    //     document.body.style.transitionTimingFunction = "ease-in-out";
-    //     document.body.style.transitionDelay = ".1s";
-    // }
 
     render() {
         return (
