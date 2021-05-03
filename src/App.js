@@ -39,6 +39,14 @@ import photo34 from './images/34.jpeg';
 import photo35 from './images/35.jpeg';
 import photo36 from './images/36.jpeg';
 import photo37 from './images/37.jpeg';
+import photo38 from './images/38.jpg';
+import photo39 from './images/39.jpg';
+import photo40 from './images/40.jpg';
+import photo41 from './images/41.jpg';
+import photo42 from './images/42.jpg';
+import photo43 from './images/43.jpg';
+import photo44 from './images/44.jpg';
+import photo45 from './images/45.jpg';
 
 export default class App extends Component {
     constructor(props) {
@@ -50,20 +58,11 @@ export default class App extends Component {
             backgrounds: [
                 photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18,
                 photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34, photo35,
-                photo36, photo37
+                photo36, photo37, photo38, photo39, photo40, photo41, photo42, photo43, photo44, photo45
             ]
         };
     }
     
-    componentDidMount() {
-        const imagesPreload = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18,
-                photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34, photo35, photo36, photo37];
-        imagesPreload.forEach((image) => {
-            const newImage = new Image();
-            newImage.src = image;
-            window[image] = newImage;
-        });
-    }
     
     shuffleAll = (arr) => {
         return arr.sort(function () { return 0.5 - Math.random() });
@@ -85,9 +84,13 @@ export default class App extends Component {
         this.shuffleAll(backgrounds);
         document.body.style.background = `url(${background})`;
         document.body.style.transitionProperty = "background";
-        document.body.style.transitionDuration = ".5s";
         document.body.style.transitionTimingFunction = "ease-in-out";
-        document.body.style.transitionDelay = ".15s";
+        document.body.style.transitionDuration = "1s";
+    }
+    
+    componentDidMount() {
+        this.findRandomQuote();
+        this.findRandomBackground();
     }
 
     render() {
