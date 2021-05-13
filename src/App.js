@@ -39,14 +39,14 @@ import photo34 from './images/34.jpeg';
 import photo35 from './images/35.jpeg';
 import photo36 from './images/36.jpeg';
 import photo37 from './images/37.jpeg';
-import photo38 from './images/38.jpg';
-import photo39 from './images/39.jpg';
-import photo40 from './images/40.jpg';
-import photo41 from './images/41.jpg';
-import photo42 from './images/42.jpg';
-import photo43 from './images/43.jpg';
-import photo44 from './images/44.jpg';
-import photo45 from './images/45.jpg';
+import photo38 from './images/38.jpeg';
+import photo39 from './images/39.jpeg';
+import photo40 from './images/40.jpeg';
+import photo41 from './images/41.jpeg';
+import photo42 from './images/42.jpeg';
+import photo43 from './images/43.jpeg';
+import photo44 from './images/44.jpeg';
+import photo45 from './images/45.jpeg';
 
 export default class App extends Component {
     constructor(props) {
@@ -89,8 +89,16 @@ export default class App extends Component {
     }
     
     componentDidMount() {
-        this.findRandomQuote();
         this.findRandomBackground();
+        this.findRandomQuote();
+        const imageList = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18,
+                photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34, photo35,
+                photo36, photo37, photo38, photo39, photo40, photo41, photo42, photo43, photo44, photo45];
+        imageList.forEach((image) => {
+            const newImage = new Image();
+            newImage.src = image;
+            window[image] = newImage;
+        });
     }
 
     render() {
