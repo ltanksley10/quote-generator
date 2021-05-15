@@ -2,7 +2,7 @@
 
 A random quote generator built with React.
 
-## Introduction
+## Description
 
 This site was built as a freeCodeCamp project to practice my JavaScript and React
 skills. It displays random quotes and background images onClick and also provides
